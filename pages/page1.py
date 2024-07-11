@@ -40,7 +40,7 @@ def load_data():
     print("Loading data success..")
 
     return vector_index, chunks
-
+vector_index, chunks = load_data()
 
 def display(vector_index, chunks):
     GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
@@ -178,7 +178,7 @@ if navbar == "Home":
     home()
 
 elif navbar == "Chat":
-    vector_index, chunks = load_data()
+    
     display(vector_index, chunks)
 
 

@@ -112,7 +112,7 @@ def cancel_appointment(ID: str) -> None:
     if len(appointment_sheet.get_all_values()) > 1:
         row_idx = appointment_sheet.find(ID).row
         if row_idx != None:
-            appointment_sheet.delete_row(row_idx)
+            appointment_sheet.delete_rows(row_idx)
 
 
 ######################## Doctor ########################

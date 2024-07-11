@@ -171,3 +171,4 @@ def chatbot():
                 st.write("Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi !!")
 
     vector_index, chunks = load_data()
+    display(vector_index, chunks)

@@ -4,6 +4,7 @@ import pandas as pd
 from connect import get_data, create_credentials
 from page_functions import home, search_drugs, appointment, profile, set_default_page
 from crud import filter_appointment, cancel_appointment
+import google.generativeai as genai
 from langchain_community.vectorstores import Chroma
 from langchain_core.prompts import PromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI

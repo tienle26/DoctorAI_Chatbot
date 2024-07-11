@@ -94,7 +94,6 @@ def register() -> None:
 
         # button submit
         submit = st.form_submit_button("Đăng ký")
-        st.write(submit)
         if submit:
             if not is_existed(email2) and "@gmail.com" in email2:
                 time.sleep(0.5)

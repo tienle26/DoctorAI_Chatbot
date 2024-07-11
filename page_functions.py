@@ -11,6 +11,7 @@ from crud import (
     create_account,
     create_appointment,
     update_appointment,
+    cancel_appointment,
     filter_appointment,
     is_existed,
     find_accountID,

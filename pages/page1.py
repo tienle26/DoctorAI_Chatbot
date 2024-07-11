@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_navigation_bar import st_navbar
 import pandas as pd
 from connect import get_data, create_credentials
-from page_functions import home, search_drugs, appointment, profile
+from page_functions import home, search_drugs, appointment, profile, set_default_page
 from crud import filter_appointment, cancel_appointment
 from langchain_community.vectorstores import Chroma
 from langchain_core.prompts import PromptTemplate
@@ -14,6 +14,7 @@ from langchain.chains.question_answering import load_qa_chain
 
 
 create_credentials()
+set_default_page()
 st.set_page_config(page_title="Use", page_icon="👨‍🔬", layout="wide")
 navbar = st_navbar(
     ["Home", "Chat", "Search", "Appointment", "Profile", "Logout"],
